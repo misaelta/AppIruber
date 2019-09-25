@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".usuario.gui.CadastroUsuarioActivity"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/cadastro"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/inputCEP"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/cep"
+            android:ems="10"
+            android:hint="@string/cep"
+            android:inputType="number"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/tvCepNotKnown"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:onClick="searchZipCode"
+            android:text="@string/esqueceu_cep" />
+
+        <Spinner
+            android:id="@+id/inputEstado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:entries="@array/state_array"/>
+
+        <EditText
+            android:enabled="true"
+            android:id="@+id/inputBairro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/bairro"
+            android:ems="10"
+            android:hint="@string/bairro"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputNumero"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/numero"
+            android:ems="10"
+            android:hint="@string/numero"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <Spinner
+            android:id="@+id/inputCidade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/pernambuco_city_array" />
+
+        <EditText
+            android:id="@+id/inputRua"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/rua"
+            android:ems="10"
+            android:hint="@string/rua"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/nome"
+            android:ems="10"
+            android:hint="@string/nome"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/cpf"
+            android:ems="10"
+            android:hint="@string/cpf"
+            android:inputType="number"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/e_mail"
+            android:ems="10"
+            android:hint="@string/e_mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+
+        <EditText
+            android:id="@+id/inputSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/senha"
+            android:ems="10"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/celular"
+            android:ems="10"
+            android:hint="@string/celular"
+            android:inputType="number"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/inputNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/data_nascimento"
+            android:ems="10"
+            android:hint="@string/data_nascimento"
+            android:inputType="date"
+            android:textColorHint="@color/colorBlack"
+            tools:targetApi="o" />
+
+
+        <Button
+            android:id="@+id/btnCadastrarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorBlack"
+            android:text="@string/cadastrar"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</ScrollView>
